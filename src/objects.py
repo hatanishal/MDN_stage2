@@ -38,6 +38,9 @@ class user:
                     skills: List of skills to keep track of
         Returns:
                     None
+        
+        Time-Complexity: O(1)
+        
         """
 
         self.name = name
@@ -53,6 +56,9 @@ class user:
 
         Returns:
                     None
+
+        Time-Complexity: O(1)
+        
         """
         self.skills.append(newSkill)
     
@@ -64,6 +70,9 @@ class user:
 
         Returns:
                     None
+        
+        Time-Complexity: O(1)
+        
         """
         self.habits.append(newHabit)
 
@@ -75,6 +84,9 @@ class user:
 
         Returns:
                     None
+            
+        Time-Complexity: O(1)
+        
         """
         self.skills.pop(position)
 
@@ -86,6 +98,9 @@ class user:
 
         Returns:
                     None
+        
+        Time-Complexity: O(1)
+        
         """
         self.habits.pop(position)
 
@@ -95,9 +110,10 @@ class habit:
     Purpose:    An instance of a specific habit with information about progress stored as attributes
 
     Last Modified:
-                18/1/25
+                19/1/25
     
     Attributes:
+                name: Name of the habit
                 streak: Number of consistent days
                 penalty: Cost if not completed
                 reward: Reward once completed
@@ -116,13 +132,20 @@ class habit:
 
         Args:       
                     name: name of the habit (string)
+                    streak: streak to be intialised as
+                    priority: priority given to the habit in the range [1,3]
+
         Returns:
                     None
+            
+        Time-Complexity: O(1)
+        
         """
 
         #Initilises the name and sets the streak
         self.name = name
         self.streak = streak
+        self.priority = priority
 
         #Defines penalty and reward based on priority
         if priority == 1:
@@ -148,6 +171,9 @@ class habit:
                     None
         Returns:
                     None
+            
+        Time-Complexity: O(1)
+        
         """
         self.streak += 1
     
@@ -159,6 +185,9 @@ class habit:
                     None
         Returns:
                     None
+            
+        Time-Complexity: O(1)
+        
         """
         self.streak = 0
 
@@ -170,11 +199,13 @@ class skills:
     Purpose:    An instance of a specific skill with information about progress stored as attributes
 
     Last Modified:
-                18/1/25
+                19/1/25
     
     Attributes:
                 streak: Number of consistent days
-                deliberate_pract: Deliberate practice that needs to be blocked off   
+                deliberate_pract: Deliberate practice that needs to be blocked off  
+                name: name of skill
+                priority: priority given to the skill in the range [1,3] 
 
     
     Methods:
@@ -194,11 +225,16 @@ class skills:
                     del_prac: The list of practices saved
         Returns:
                     None
+
+        Time-Complexity: O(1)
+        
         """
 
         #Initialises predetermined constants
         self.name = name
         self.streak = streak
+        self.del_prac = del_prac
+        self.priority = priority
 
         #Choose penalty and reward based on priority
         if priority == 1:
@@ -224,7 +260,11 @@ class skills:
                     None
         Returns:
                     None
+
+        Time-Complexity: O(1)
+        
         """
+
         self.streak += 1
     
     def reset_streak(self):
@@ -235,5 +275,8 @@ class skills:
                     None
         Returns:
                     None
+                
+        Time-Complexity: O(1)
+        
         """
         self.streak = 0

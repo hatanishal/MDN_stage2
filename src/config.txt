@@ -1,0 +1,29 @@
+SETUP_CHECK: False
+NAME: Nishal
+COINS: 220
+SAVED_HABITS: True
+habit: sleeping
+streak: 0
+prio: 1
+-
+habit: eat healthy
+streak: 0
+prio: 1
+END OF HABITS
+SAVED_SKILLS: True
+skill: Guitar
+streak: 1
+prio: 1
+DEL_PRAC: True
+play songs
+play some scales
+done
+END OF PRAC
+skill: Soccer
+streak: 0
+prio: 2
+DEL_PRAC: True
+shoot some balls
+done
+END OF PRAC
+END OF SKILLS
