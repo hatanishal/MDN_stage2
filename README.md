@@ -9,7 +9,8 @@ A few notes:
   
 
 Files:
-src/main.py = The main script that runs the interactive menu that the user will be using
-src/objects.py = The definitions of the custom classes
-src/common.py = A common file for all the functions that is needed for the application's functionality
-src/config.txt = A text file that contains the user
+#
+- src/main.py = The main script that runs the interactive menu that the user will be using
+- src/objects.py = The definitions of the custom classes
+- src/common.py = A common file for all the functions that is needed for the application's functionality
+- src/config.txt = A text file that contains the user
